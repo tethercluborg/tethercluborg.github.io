@@ -3,61 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TetherClub</title>
+    <title>TetherClub - Official GitHub Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://tetherclub.org/favicon.png" type="image/x-icon">
 </head>
 <body>
+    <!-- Floating Background Elements -->
+    <div class="bg-circle circle-1"></div>
+    <div class="bg-circle circle-2"></div>
+    <div class="bg-circle circle-3"></div>
+    <div class="bg-circle circle-4"></div>
+    
     <div class="container">
-        <div class="logo-section">
-            <i class="fas fa-coins logo-icon"></i>
-            <h1>TetherClub</h1>
-        </div>
-
-        <div class="content">
-            <h2>Welcome to TetherClub GitHub</h2>
-            <p class="description">
-                This is the official GitHub page for TetherClub. You can visit our main website for the complete experience.
-            </p>
-
-            <div class="info-box">
-                <p><i class="fas fa-globe"></i> Official Website</p>
-                <h3 class="website-url">https://tetherclub.org</h3>
-            </div>
-
-            <div class="button-group">
-                <a href="https://tetherclub.org" class="btn-primary" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> Visit Official Website
-                </a>
-                
-                <div class="features">
-                    <div class="feature">
-                        <i class="fas fa-chart-line"></i>
-                        <h4>Investment Plans</h4>
-                        <p>Start with just $120</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-layer-group"></i>
-                        <h4>Level Income</h4>
-                        <p>Up to 50 levels</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-trophy"></i>
-                        <h4>Pool System</h4>
-                        <p>Silver, Gold, Platinum</p>
-                    </div>
+        <!-- Header with Logo -->
+        <header class="main-header">
+            <div class="logo-container">
+                <img src="https://tetherclub.org/favicon.png" alt="TetherClub Logo" class="main-logo" onerror="this.style.display='none'">
+                <div class="logo-text">
+                    <h1 class="logo-title">TETHER<span>CLUB</span></h1>
+                    <p class="logo-subtitle">Smart Investment Platform</p>
                 </div>
             </div>
-
-            <div class="footer">
-                <p>
-                    <i class="fas fa-info-circle"></i> 
-                    For complete information about investment plans and features, please visit our official website.
-                </p>
+            <div class="header-badge">
+                <i class="fas fa-star"></i>
+                Official GitHub Page
             </div>
-        </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-text">
+                    <h2 class="hero-title">
+                        Welcome to <span class="gradient-text">TetherClub</span> GitHub
+                    </h2>
+                    <p class="hero-description">
+                        This is the official GitHub repository for TetherClub - Your gateway to smart investment solutions. 
+                        Connect with us through our official channels for the complete experience.
+                    </p>
+                    
+                    <!-- Stats Cards -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3>0.40%</h3>
+                                <p>Daily Returns</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3>50</h3>
+                                <p>Level Income</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3>3</h3>
+                                <p>Pool Tiers</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-percentage"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3>175%</h3>
+                                <p>Total Earnings</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="visual-card floating">
+                        <div class="card-glow"></div>
+                        <i class="fas fa-coins"></i>
+                        <h3>Start with $120</h3>
+                        <p>Minimum Investment</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Official Links -->
+            <section class="links-section">
+                <h2 class="section-title">
+                    <i class="fas fa-external-link-alt"></i>
+                    Official Platforms
+                </h2>
+                
+                <div class="links-grid">
+                    <!-- Main Website -->
+                    <a href="https://tetherclub.org" target="_blank" class="link-card website-card">
+                        <div class="link-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="link-content">
+                            <h3>Official Website</h3>
+                            <p>https://tetherclub.org</p>
+                            <span class="link-badge">Main Platform</span>
+                        </div>
+                        <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+                    
+                    <!-- Telegram -->
+                    <a href="https://t.me/tetherclub_community" target="_blank" class="link-card telegram-card">
+                        <div class="link-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="link-content">
+                            <h3>Telegram Community</h3>
+                            <p>@tetherclub_community</p>
+                            <span class="link-badge">Live Support</span>
+                        </div>
+                        <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+                    
+                    <!-- Twitter/X -->
+                    <a href="https://x.com/tether_club" target="_blank" class="link-card twitter-card">
+                        <div class="link-icon">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="link-content">
+                            <h3>Twitter / X</h3>
+                            <p>@tether_club</p>
+                            <span class="link-badge">Updates</span>
+                        </div>
+                        <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+                    
+                    <!-- Gmail -->
+                    <a href="mailto:tetherclub.org@gmail.com" class="link-card gmail-card">
+                        <div class="link-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="link-content">
+                            <h3>Email Support</h3>
+                            <p>tetherclub.org@gmail.com</p>
+                            <span class="link-badge">24/7 Support</span>
+                        </div>
+                        <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features-section">
+                <h2 class="section-title">
+                    <i class="fas fa-star"></i>
+                    Why Choose TetherClub?
+                </h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Secure & Transparent</h3>
+                        <p>Advanced security measures with complete transparency in all transactions.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Daily Returns</h3>
+                        <p>Earn 0.40% daily returns until you reach 175% of your investment.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Multi-Level Income</h3>
+                        <p>Earn from up to 50 levels of your network with structured commission.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>Pool Rewards</h3>
+                        <p>Silver, Gold, and Platinum pools with daily distribution.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Start Your Journey?</h2>
+                    <p class="cta-description">
+                        Join thousands of investors growing their wealth with TetherClub's proven investment system.
+                    </p>
+                    
+                    <div class="cta-buttons">
+                        <a href="https://tetherclub.org" target="_blank" class="cta-btn primary-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            Visit Official Website
+                        </a>
+                        
+                        <a href="https://t.me/tetherclub_community" target="_blank" class="cta-btn secondary-btn">
+                            <i class="fab fa-telegram"></i>
+                            Join Telegram Group
+                        </a>
+                    </div>
+                    
+                    <div class="security-badge">
+                        <i class="fas fa-lock"></i>
+                        <span>Secure Connection • Encrypted Data • 24/7 Support</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://tetherclub.org/favicon.png" alt="TetherClub Logo" class="footer-logo-img">
+                    <div>
+                        <h3>TETHERCLUB</h3>
+                        <p>Smart Investment Solutions</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="https://tetherclub.org" target="_blank">
+                        <i class="fas fa-globe"></i> Website
+                    </a>
+                    <a href="https://t.me/tetherclub_community" target="_blank">
+                        <i class="fab fa-telegram"></i> Telegram
+                    </a>
+                    <a href="https://x.com/tether_club" target="_blank">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                    <a href="mailto:tetherclub.org@gmail.com">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                </div>
+                
+                <div class="footer-info">
+                    <p>
+                        <i class="fas fa-info-circle"></i>
+                        This is the official GitHub page. All investments carry risk. Please read terms on official website.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 TetherClub. All rights reserved. | Official Links Only</p>
+            </div>
+        </footer>
     </div>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
