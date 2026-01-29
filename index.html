@@ -3,229 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TetherClub - Smart Investment Platform</title>
+    <title>TetherClub - Redirecting</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
 </head>
 <body>
-    <!-- Countdown Overlay -->
-    <div id="countdownOverlay">
-        <div class="countdown-content">
-            <div class="countdown-logo">
-                <i class="fas fa-coins"></i>
-                <h2>TetherClub</h2>
-            </div>
-            <h1>Redirecting to Official Website</h1>
-            <div class="countdown-circle">
-                <svg width="120" height="120">
-                    <circle class="countdown-bg" cx="60" cy="60" r="54"></circle>
-                    <circle class="countdown-progress" cx="60" cy="60" r="54"></circle>
-                </svg>
-                <div class="countdown-number" id="countdownNumber">10</div>
-            </div>
-            <p>You will be automatically redirected to <strong>tetherclub.org</strong></p>
-            <button id="skipButton" class="skip-btn">Skip Countdown <i class="fas fa-forward"></i></button>
-        </div>
-    </div>
-
-    <!-- Main Content -->
     <div class="container">
-        <!-- Header -->
-        <header>
-            <div class="logo">
-                <i class="fas fa-coins"></i>
-                <h1>Tether<span>Club</span></h1>
+        <div class="logo-section">
+            <i class="fas fa-coins logo-icon"></i>
+            <h1>TetherClub</h1>
+        </div>
+
+        <div class="content">
+            <h2>Redirecting to Official Website</h2>
+            <p class="description">
+                Welcome to TetherClub GitHub page. You're being redirected to our official website for the complete experience.
+            </p>
+            
+            <div class="countdown-box">
+                <div class="countdown-circle">
+                    <svg width="120" height="120">
+                        <circle class="circle-bg" cx="60" cy="60" r="54"></circle>
+                        <circle class="circle-progress" cx="60" cy="60" r="54"></circle>
+                    </svg>
+                    <div class="countdown-number">10</div>
+                </div>
+                <p class="countdown-text">seconds remaining</p>
             </div>
-            <div class="header-info">
-                <p><i class="fas fa-globe"></i> Official Site: <a href="https://tetherclub.org" target="_blank">tetherclub.org</a></p>
-                <button class="redirect-btn" id="mainRedirectBtn">
-                    <i class="fas fa-external-link-alt"></i> Go to Website
+
+            <p class="redirect-info">
+                You will be automatically redirected to our official website in <span class="highlight">10</span> seconds.
+            </p>
+
+            <div class="button-group">
+                <a href="https://tetherclub.org" class="btn-primary">
+                    <i class="fas fa-external-link-alt"></i> Visit TetherClub.org Now
+                </a>
+                <button id="skipBtn" class="btn-secondary">
+                    <i class="fas fa-forward"></i> Skip Countdown
                 </button>
             </div>
-        </header>
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Start Your Journey With Just <span class="highlight">$120</span></h2>
-                <p class="subtitle">Smart. Transparent. Profitable. Grow your wealth every day with TetherClub's innovative investment platform.</p>
-                <div class="cta-buttons">
-                    <button class="btn-primary" id="learnMoreBtn">
-                        <i class="fas fa-chart-line"></i> Learn More
-                    </button>
-                    <button class="btn-secondary" id="redirectNowBtn">
-                        <i class="fas fa-rocket"></i> Join Now
-                    </button>
-                </div>
+            <div class="footer">
+                <p>
+                    <i class="fas fa-info-circle"></i> 
+                    Official Website: <a href="https://tetherclub.org" target="_blank">https://tetherclub.org</a>
+                </p>
             </div>
-            <div class="hero-image">
-                <div class="floating-card">
-                    <i class="fas fa-gem"></i>
-                    <h3>0.40% Daily Returns</h3>
-                    <p>Up to 175% of your investment</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Investment Plans -->
-        <section class="plans">
-            <h2 class="section-title"><i class="fas fa-cubes"></i> Investment Plans</h2>
-            
-            <div class="plan-cards">
-                <!-- Basic Plan -->
-                <div class="plan-card">
-                    <div class="plan-header">
-                        <h3><i class="fas fa-star"></i> Starter Plan</h3>
-                        <div class="plan-price">$120<span>Minimum</span></div>
-                    </div>
-                    <div class="plan-features">
-                        <p><i class="fas fa-check-circle"></i> Start with just $120</p>
-                        <p><i class="fas fa-check-circle"></i> Invest any amount from $10</p>
-                        <p><i class="fas fa-check-circle"></i> 0.40% daily returns</p>
-                        <p><i class="fas fa-check-circle"></i> Up to 175% total earnings</p>
-                        <p><i class="fas fa-check-circle"></i> 10% platform fee</p>
-                    </div>
-                </div>
-                
-                <!-- Level Income -->
-                <div class="plan-card featured">
-                    <div class="plan-badge">Most Popular</div>
-                    <div class="plan-header">
-                        <h3><i class="fas fa-layer-group"></i> Level Income</h3>
-                        <div class="plan-price">50<span>Levels</span></div>
-                    </div>
-                    <div class="plan-features">
-                        <p><i class="fas fa-check-circle"></i> Earn from 50 levels deep</p>
-                        <p><i class="fas fa-check-circle"></i> 75% ROI distributed as level income</p>
-                        <p><i class="fas fa-check-circle"></i> Level 1: 25% income</p>
-                        <p><i class="fas fa-check-circle"></i> Level 2: 15% income</p>
-                        <p><i class="fas fa-check-circle"></i> Levels 31-50: 0.75% each</p>
-                    </div>
-                </div>
-                
-                <!-- Pool System -->
-                <div class="plan-card">
-                    <div class="plan-header">
-                        <h3><i class="fas fa-trophy"></i> Pool System</h3>
-                        <div class="plan-price">3<span>Tiers</span></div>
-                    </div>
-                    <div class="plan-features">
-                        <p><i class="fas fa-check-circle"></i> Silver Pool: 2.5% platform share</p>
-                        <p><i class="fas fa-check-circle"></i> Gold Pool: 1.5% platform share</p>
-                        <p><i class="fas fa-check-circle"></i> Platinum Pool: 1% platform share</p>
-                        <p><i class="fas fa-check-circle"></i> Daily distribution every 24 hours</p>
-                        <p><i class="fas fa-check-circle"></i> Unlimited earning potential</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pool Details -->
-        <section class="pools">
-            <h2 class="section-title"><i class="fas fa-award"></i> Pool Details</h2>
-            
-            <div class="pool-tabs">
-                <button class="pool-tab active" data-pool="silver">
-                    <i class="fas fa-medal"></i> Silver Pool
-                </button>
-                <button class="pool-tab" data-pool="gold">
-                    <i class="fas fa-crown"></i> Gold Pool
-                </button>
-                <button class="pool-tab" data-pool="platinum">
-                    <i class="fas fa-gem"></i> Platinum Pool
-                </button>
-            </div>
-            
-            <div class="pool-content active" id="silver-pool">
-                <div class="pool-info">
-                    <h3><i class="fas fa-medal"></i> Silver Pool</h3>
-                    <ul>
-                        <li><strong>Pool Share:</strong> 2.5% of total platform collection</li>
-                        <li><strong>Total Entries:</strong> 100,000</li>
-                        <li><strong>Qualification Time:</strong> Within 30 days from joining</li>
-                        <li><strong>Direct Referrals:</strong> 10 Active Referrals</li>
-                        <li><strong>Team Business:</strong> Level 1 – $1,000 | Level 2 – $10,000</li>
-                    </ul>
-                    <p class="pool-note"><i class="fas fa-info-circle"></i> Pool Reward = Total Amount in Pool / Total Members in Pool</p>
-                </div>
-            </div>
-            
-            <div class="pool-content" id="gold-pool">
-                <div class="pool-info">
-                    <h3><i class="fas fa-crown"></i> Gold Pool</h3>
-                    <ul>
-                        <li><strong>Pool Share:</strong> 1.5% of total platform collection</li>
-                        <li><strong>Total Entries:</strong> 75,000</li>
-                        <li><strong>Qualification Time:</strong> Within 45 days after Silver Pool</li>
-                        <li><strong>Team Business:</strong> Level 3 – $50,000 | Level 4 – $125,000</li>
-                    </ul>
-                    <p class="pool-note"><i class="fas fa-info-circle"></i> Unlock access to Gold Pool Income for higher passive rewards!</p>
-                </div>
-            </div>
-            
-            <div class="pool-content" id="platinum-pool">
-                <div class="pool-info">
-                    <h3><i class="fas fa-gem"></i> Platinum Pool</h3>
-                    <ul>
-                        <li><strong>Pool Share:</strong> 1% of total platform collection</li>
-                        <li><strong>Total Entries:</strong> 25,000</li>
-                        <li><strong>Qualification Time:</strong> Within 60 days after Gold Pool</li>
-                        <li><strong>Team Business:</strong> Level 5 – $625,000</li>
-                    </ul>
-                    <p class="pool-note"><i class="fas fa-info-circle"></i> Exclusive access to the highest-earning pool in the system!</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Call to Action -->
-        <section class="cta">
-            <div class="cta-content">
-                <h2>Ready to Start Your Investment Journey?</h2>
-                <p>Join thousands of investors growing their wealth with TetherClub's proven system.</p>
-                <div class="stats">
-                    <div class="stat">
-                        <h3>0.40%</h3>
-                        <p>Daily Returns</p>
-                    </div>
-                    <div class="stat">
-                        <h3>50</h3>
-                        <p>Level Income</p>
-                    </div>
-                    <div class="stat">
-                        <h3>3</h3>
-                        <p>Pool Tiers</p>
-                    </div>
-                    <div class="stat">
-                        <h3>175%</h3>
-                        <p>Total Earnings</p>
-                    </div>
-                </div>
-                <button class="btn-primary btn-large" id="finalRedirectBtn">
-                    <i class="fas fa-external-link-alt"></i> Visit TetherClub Official Website
-                </button>
-                <p class="redirect-notice">You will be redirected to <strong>https://tetherclub.org</strong></p>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <i class="fas fa-coins"></i>
-                    <h3>Tether<span>Club</span></h3>
-                    <p>Smart Investment Platform</p>
-                </div>
-                <div class="footer-links">
-                    <p><i class="fas fa-link"></i> Official Website: <a href="https://tetherclub.org" target="_blank">tetherclub.org</a></p>
-                    <p class="disclaimer"><i class="fas fa-exclamation-triangle"></i> This is a marketing page. All investment carries risk.</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 TetherClub. This page will redirect to the official website in <span id="footerCountdown">10</span> seconds.</p>
-            </div>
-        </footer>
+        </div>
     </div>
 
     <script src="script.js"></script>
