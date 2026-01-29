@@ -1,51 +1,49 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Elements
-    const countdownNumber = document.querySelector('.countdown-number');
-    const redirectInfo = document.querySelector('.redirect-info .highlight');
-    const skipBtn = document.getElementById('skipBtn');
-    const circleProgress = document.querySelector('.circle-progress');
+    // Smooth hover effects for buttons
+    const buttons = document.querySelectorAll('.btn-primary');
     
-    // Countdown settings
-    let countdown = 10;
-    const totalTime = 10; // seconds
-    const redirectUrl = 'https://tetherclub.org';
-    
-    // Circle circumference calculation
-    const radius = 54;
-    const circumference = 2 * Math.PI * radius;
-    
-    // Set initial stroke properties
-    circleProgress.style.strokeDasharray = circumference;
-    circleProgress.style.strokeDashoffset = circumference;
-    
-    // Update countdown display
-    function updateCountdown() {
-        countdownNumber.textContent = countdown;
-        redirectInfo.textContent = countdown;
+    buttons.forEach(button => {
+        button.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-3px)';
+        });
         
-        // Calculate progress for circle
-        const progress = ((totalTime - countdown) / totalTime) * circumference;
-        circleProgress.style.strokeDashoffset = circumference - progress;
-        
-        if (countdown <= 0) {
-            // Redirect when countdown reaches 0
-            window.location.href = redirectUrl;
-        } else {
-            countdown--;
-            setTimeout(updateCountdown, 1000);
-        }
-    }
-    
-    // Start countdown
-    setTimeout(updateCountdown, 1000);
-    
-    // Skip button functionality
-    skipBtn.addEventListener('click', function() {
-        window.location.href = redirectUrl;
+        button.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
     });
     
-    // Auto-redirect after total time (as backup)
-    setTimeout(function() {
-        window.location.href = redirectUrl;
-    }, totalTime * 1000 + 500);
+    // Animate features on scroll
+    const features = document.querySelectorAll('.feature');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }, index * 100);
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    features.forEach(feature => {
+        feature.style.opacity = '0';
+        feature.style.transform = 'translateY(20px)';
+        feature.style.transition = 'all 0.5s ease';
+        observer.observe(feature);
+    });
+    
+    // Add click sound effect (optional)
+    const clickSound = new Audio('data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEAQB8AAEAfAAABAAgAZGF0YQ');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Simulate click sound
+            try {
+                clickSound.play();
+            } catch(e) {
+                // Sound not available, continue silently
+            }
+        });
+    });
 });
